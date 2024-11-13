@@ -24,9 +24,9 @@ public class Main {
         String[][] newUsers = new String[6][3];
         for (int i = 0; i < 6; i++) {
             System.out.println(i+1);
-            newUsers[i][0] = scanner.nextLine();
-            newUsers[i][1] = scanner.nextLine();
-            newUsers[i][2] = scanner.nextLine();
+            String firstName = scanner.nextLine();
+            String secondName = scanner.nextLine();
+            String age = scanner.nextLine();
         }
 
         String sqlInsertUser = "insert into driver(name, surname, age)" +
